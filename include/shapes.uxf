@@ -1,0 +1,84 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>/+virtual Draw() = 0/Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>360</x><y>320</y><w>220</w><h>200</h></coordinates><panel_attributes>*Shape (abstract)*
+--
+#Point m_center
+#double m_angle
+#COLORS m_color
+
+--
+
++v Draw() = 0
++v Move(const Point&amp; offset)
++v Rotate(double anngle)
++v Revolve(const Point&amp; pivot, double angle)
++v SetColor(COLORS color)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>320</y><w>260</w><h>110</h></coordinates><panel_attributes>*Point*
+--
+#double x_coordinate
+#double y_coordinate
+
+--
++Move(double xNew, double yNew)
++Revolve(const Point&amp; pivot, double angle)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>350</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>640</y><w>120</w><h>140</h></coordinates><panel_attributes>*Line*
+--
+#double m_length
+
+--
+
++v Draw()
++v Clone()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>640</y><w>120</w><h>140</h></coordinates><panel_attributes>*Circle*
+--
+#double m_radius
+
+--
+
++v Draw()
++v Clone()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>640</y><w>120</w><h>140</h></coordinates><panel_attributes>*Trinaagle*
+--
+#double m_radius
+
+--
+
++v Draw()
++v Clone()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>640</y><w>120</w><h>140</h></coordinates><panel_attributes>*Square*
+--
+#double m_radius
+
+--
+
++v Draw()
++v Clone()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>640</y><w>120</w><h>140</h></coordinates><panel_attributes>*Rectangle*
+--
+#double m_radius
+
+--
+
++v Draw()
++v Clone()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>520</y><w>350</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>330;10;330;50;10;50;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>560</y><w>360</w><h>100</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;340;10;340;80</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>560</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>416</x><y>560</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>596</x><y>560</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>756</x><y>250</y><w>220</w><h>200</h></coordinates><panel_attributes>*Group*
+--
+#std::vector&lt;Shape*&gt; m_shapes
+
+--
+
++v Draw()
++v Move(const Point&amp; offset)
++v Rotate(double anngle)
++v Revolve(const Point&amp; pivot, double angle)
++v SetColor(COLORS color)
++v Clone()
++ AddShape(Shape* shape)
++ RemoveShape(Shape* shape)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>300</y><w>210</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>190;10;110;10;110;80;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>410</y><w>200</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;180;10</additional_attributes></element></diagram>
