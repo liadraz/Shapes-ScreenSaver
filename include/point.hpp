@@ -8,6 +8,9 @@
 #include <iosfwd>
 
 
+namespace ilrd
+{
+
 class Point
 {
 public:
@@ -66,5 +69,6 @@ const double& Point::GetY() const
     return m_y;
 }
 
+} //namespae ilrd
 
 #endif // SHAPES_POINT
