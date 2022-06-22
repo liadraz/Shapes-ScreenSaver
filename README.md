@@ -1,3 +1,5 @@
 # Shapes-ScreenSaver
 
-Screen-Saver in shaepes is a project based on composite design pattern.
+Screen-Saver with shapes is a project based on composite design pattern.
+
+Implemented in c++.
